@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>Arie</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<style>
+            body,html
+            {
+                background-color:#ffc1cc;
+                padding:0;
+                margin:0;
+                font-family:Roboto, sans-serif;
+                height:200%;
+            }
+            .heroSwipe
+            {
+                background-color: #ff6b86;
+                height:40rem;
+                color:white;
+            }
+            .heroSwipe > .title
+            {
+                padding-left:16rem;
+                padding-top:6rem;
+                font-size:6rem;
+            }
+            .heroSwipe > .text
+            {
+                padding-left:16rem;
+            }
+            .topbar
+            {
+                width:100%;
+                position:fixed;
+                top:0;
+                left:0;
+                background-color: #ff6b86;
+                height:5rem;
+                opacity:0;
+            }
+            .topbar > .title
+            {
+                padding:1.4rem;
+                font-size:2rem;
+            }
+        </style>
+</head>
+<body onscroll="if(this.scrollY>((40-5)*16)){document.getElementsByClassName('topbar')[0].style.opacity=1;}else{document.getElementsByClassName('topbar')[0].style.opacity=0;}">
+<header>
+<div class="heroSwipe">
+<h2 class="title">Arie</h2>
+<div class="text">This site is IPv6 capable</div>
+<div class="topbar"><div class="title">Arie</div></div>
+</div>
+</header>
+</body>
+</html>
