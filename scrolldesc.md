@@ -1,3 +1,10 @@
+### (only one scene)
+Dart hits dart board, animates right to left, when the dart hits, boom you got a logo and that slides down into the navbar and the homepage is revealed
+OR
+.. different segments of the dartboard link to different parts of the site and provide a sales pitch and overview
+
+
+
 ### Scene 1
 Stack of papers and other things in the scene (desk, clock) frustrated individual (human or other character), trashy room, window (or fan)
 Temporary navbar to quickly login? maybe sprites will be the links to login and stuff?
