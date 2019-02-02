@@ -35,7 +35,7 @@ function registerPoints(e,files,dir)
  }) 
 }
 
-fs.readdir("/templates/",{withFileTypes:true},function(e,files){registerPoints(e,files,__dirname+"/templates")})
+fs.readdir("templates/",{withFileTypes:true},function(e,files){registerPoints(e,files,__dirname+"/templates")})
 
 
 class Session
