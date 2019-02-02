@@ -1,0 +1,5 @@
+{
+"finance":[{"username":"test2","availability":{"start":0,"end":10}}],
+"accounting":[{"username":"test1","availability":{"start":0,"end":10}}],
+"other":[{"username":"test0","availability":{"start":0,"end":10}}]
+}
