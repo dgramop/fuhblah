@@ -7,7 +7,7 @@ Window animates open or fan animates to spinning.
 If we go with a window animation, there should be two images, one that stays fixed and one that goes up with the scroll (the shutter).
 
 Breeze animates from right to left. This can be an SVG that is drawn as user scrolls. A single paper flies off the stack
-The rest of the room stays fixed and the camera follows the paper float down.
+The rest of the room stays fixed and the camera follows the paper float down. (or just legit straight lines)
 
 Paper does some acrobatic crap and then eventually becomes fullscreen? Paper is a flyer for accuracy. 
 
