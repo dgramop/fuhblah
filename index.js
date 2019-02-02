@@ -31,7 +31,7 @@ function registerPoints(e,files,dir)
      console.log("Endpoint: /"+file.name+" corresponds to "+dir+"/"+file.name)
      app.get("/"+file.name,function(req,res){
      	ejs.renderFile(dir+"/"+file.name, {mongoose:mongoose,DEBUG:DEBUG,User:User,Transaction:Transaction,Session:Session,fs:fs,app:app,req:req,res:res,crypto:crypto/*TODO: have data/variables in 
-here. Maybe make code actually modular or in classes and pass it that way?*/}, {}, function(err, str){res.send(str);if(err) if(DEBUG) res.send(err)});
+here. Maybe make code actually modular or in classes and pass it that way?*/}, {}, function(err, str){if(err){if(DEBUG)res.send("Error"+err)}else res.send(str)});
      })
    }
 	//get file name
