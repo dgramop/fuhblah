@@ -8,7 +8,7 @@ app.use('/res', express.static('res'))
 
 const ejs=require("ejs")
 const mongoose=require("mongoose");//make sure to verify email and strip special email chars?
-mongoose.connect('mongodb://localhost:27017/myapp')
+mongoose.connect('mongodb://localhost:27017/accuracy')
 
 const User=mongoose.model("User",{name:String,email:String,hash:String,salt:String,points:Number});
 const Transaction=mongoose.model("Transaction",{user:String,amount:Number,operatingStatus:Number,date:Number});
