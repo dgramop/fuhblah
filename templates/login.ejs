@@ -5,7 +5,8 @@
 <body>
 <%- include("../partials/header") %>
 <!-- This is by no means the fullest extent I'd like to auth. I would have had 2fa, oauth stuff too. Please don't judge this auth as all I can do. I've done much better in the past. This auth is here just for a quick competition, I don't consider this good auth -->
-<form action="/login" method="GET"><!-- just because I'm in a hurry I'm probably making everything GET. GET request (parameters and path) are still encrypted with SSL when used, and browsers wont usually package the password in the URL and save it in history.
+<form action="/login" method="GET"><!-- just because I'm in a hurry I'm probably making everything GET. GET request (parameters and path) are still encrypted with SSL when used, and browsers wont 
+usually package the password in the URL and save it in history.-->
 <input type="text" name="username"/>
 <input type="password" name="password"/><!-- no zero knowledge auth. I've written far better auth systems in the past (see delet.in). I'm just gonna hash, salt and call it a day. I could add a captcha but this is for a competition and that seems extra -->
 </form>
