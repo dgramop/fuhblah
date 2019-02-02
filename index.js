@@ -31,7 +31,7 @@ function registerPoints(e,files,dir)
    else//might have to add some slashes to half-assed path stuff. dir traversal should be ok because these are all non-user contributed paths.
    {
      console.log("Endpoint: /"+file.name+" corresponds to "+dir+"/"+file.name)
-     app.get("/"+file.name,function(req,res){
+     app.get("/"+file.name.replace(".ejs",""),function(req,res){
      	ejs.renderFile(dir+"/"+file.name, {mongoose:mongoose,DEBUG:DEBUG,User:User,Transaction:Transaction,Session:Session,fs:fs,app:app,req:req,res:res,crypto:crypto/*TODO: have data/variables in 
 here. Maybe make code actually modular or in classes and pass it that way?*/}, {}, function(err, str){if(err){if(DEBUG)res.send("Error"+err)}else res.send(str)});
      })
