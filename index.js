@@ -17,6 +17,8 @@ const specificConfig=[];
 
 const DEBUG=true;
 
+app.get("/",function(req,res){res.sendFile(__dirname+"/templates/index.htm")})
+
 //@param files []fs.Dirent
 function registerPoints(e,files,dir)
 {
